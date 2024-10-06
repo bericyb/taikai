@@ -27,6 +27,10 @@ func main() {
 		})
 	})
 
+	r.GET("/signup", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "signup", gin.H{})
+	})
+
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"message": "pong",
