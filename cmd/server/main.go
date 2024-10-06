@@ -16,7 +16,7 @@ func main() {
 		content := "hello world"
 		c.HTML(http.StatusOK, "index", gin.H{
 			"Title":      "Taikai: Meetup for free",
-			"IsLoggedIn": true,
+			"IsLoggedIn": false,
 			"Content":    content,
 		})
 	})

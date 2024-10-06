@@ -50,17 +50,19 @@
 			<ul
 				class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-zinc-100 rounded-lg bg-zinc-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-zinc-800 dark:border-zinc-700">
 				<li>
-					<a href="/create"
+					<button data-modal-toggle="authentication-modal"
+						data-modal-target="authentication-modal"
 						class="block text-zinc-900 dark:text-white hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-rose-300 font-medium rounded-lg text-sm px-2 py-2 mx-0 text-center dark:hover:bg-rose-700 dark:focus:ring-rose-800">Start
 						A Taikai
-					</a>
+					</button>
 
 				</li>
 				<li>
-					<a href="/login"
+					<button data-modal-toggle="authentication-modal"
+						data-modal-target="authentication-modal"
 						class="block text-zinc-900 dark:text-white hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-rose-300 font-medium rounded-lg text-sm px-2 py-2 mx-0 text-center dark:hover:bg-rose-700 dark:focus:ring-rose-800">Log
 						In
-					</a>
+					</button>
 				</li>
 				<li>
 					<a href="/signup"
@@ -71,10 +73,10 @@
 			</ul>
 			{{ else }}
 			<ul
-				class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-zinc-100 rounded-lg bg-zinc-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-zinc-800 md:dark:bg-zinc-900 dark:border-zinc-700">
+				class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-zinc-100 rounded-lg bg-zinc-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-zinc-800 dark:border-zinc-700">
 				<li>
 					<a href="/create" type="button"
-						class="block text-white hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-rose-300 font-medium rounded-lg text-sm px-1 py-2 text-center dark:hover:bg-rose-700 dark:focus:ring-rose-800">Start
+						class="block text-white bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-rose-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:hover:bg-rose-700 dark:focus:ring-rose-800">Start
 						A Taikai
 					</a>
 				</li>

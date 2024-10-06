@@ -24,10 +24,18 @@
 			document.documentElement.classList.remove('dark')
 		}
 	</script>
+	<!-- <script> -->
+	<!-- 	htmx.onLoad(function (content) { -->
+	<!-- 		initFlowbite(); -->
+	<!-- 	}) -->
+	<!-- </script> -->
 </head>
 
 <body class="bg-white dark:bg-zinc-700">
 	{{ template "navbar" . }}
+
+	{{ template "authentication" . }}
+
 	<div class="max-w-screen-xl mx-auto">
 		{{ block "content" . }}
 		<article class="mx-auto format lg:format-lg dark:format-invert text-center">
